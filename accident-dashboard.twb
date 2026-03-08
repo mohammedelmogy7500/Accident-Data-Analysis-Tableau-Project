@@ -1,0 +1,878 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.25.0114.1153                               -->
+<workbook original-version='18.1' source-build='2024.3.3 (20243.25.0114.1153)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='accident data' inline='true' name='federated.0sb2tds02gi4nb0zrz8840a3b02k' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='accident data' name='textscan.0uxavt20enm9g219bpwk00hzgtbu'>
+            <connection class='textscan' directory='D:/Data analysis depi/tableau/Tableau project' filename='accident data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0uxavt20enm9g219bpwk00hzgtbu' name='accident data.csv' table='[accident data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_AE' separator=','>
+            <column datatype='string' name='Index' ordinal='0' />
+            <column datatype='string' name='Accident_Severity' ordinal='1' />
+            <column datatype='date' name='Accident Date' ordinal='2' />
+            <column datatype='real' name='Latitude' ordinal='3' />
+            <column datatype='string' name='Light_Conditions' ordinal='4' />
+            <column datatype='string' name='District Area' ordinal='5' />
+            <column datatype='real' name='Longitude' ordinal='6' />
+            <column datatype='integer' name='Number_of_Casualties' ordinal='7' />
+            <column datatype='integer' name='Number_of_Vehicles' ordinal='8' />
+            <column datatype='string' name='Road_Surface_Conditions' ordinal='9' />
+            <column datatype='string' name='Road_Type' ordinal='10' />
+            <column datatype='string' name='Urban_or_Rural_Area' ordinal='11' />
+            <column datatype='string' name='Weather_Conditions' ordinal='12' />
+            <column datatype='string' name='Vehicle_Type' ordinal='13' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[accident data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;AED&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_AE&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Index</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Index]</local-name>
+            <parent-name>[accident data.csv]</parent-name>
+            <remote-alias>Index</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[accident data.csv_D373165417F64C5787A7627F9FEE360E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Accident_Severity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Accident_Severity]</local-name>
+            <parent-name>[accident data.csv]</parent-name>
+            <remote-alias>Accident_Severity</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[accident data.csv_D373165417F64C5787A7627F9FEE360E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Accident Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Accident Date]</local-name>
+            <parent-name>[accident data.csv]</parent-name>
+            <remote-alias>Accident Date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[accident data.csv_D373165417F64C5787A7627F9FEE360E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Latitude]</local-name>
+            <parent-name>[accident data.csv]</parent-name>
+            <remote-alias>Latitude</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[accident data.csv_D373165417F64C5787A7627F9FEE360E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Light_Conditions</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Light_Conditions]</local-name>
+            <parent-name>[accident data.csv]</parent-name>
+            <remote-alias>Light_Conditions</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[accident data.csv_D373165417F64C5787A7627F9FEE360E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>District Area</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[District Area]</local-name>
+            <parent-name>[accident data.csv]</parent-name>
+            <remote-alias>District Area</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[accident data.csv_D373165417F64C5787A7627F9FEE360E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Longitude]</local-name>
+            <parent-name>[accident data.csv]</parent-name>
+            <remote-alias>Longitude</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[accident data.csv_D373165417F64C5787A7627F9FEE360E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number_of_Casualties</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number_of_Casualties]</local-name>
+            <parent-name>[accident data.csv]</parent-name>
+            <remote-alias>Number_of_Casualties</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[accident data.csv_D373165417F64C5787A7627F9FEE360E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number_of_Vehicles</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number_of_Vehicles]</local-name>
+            <parent-name>[accident data.csv]</parent-name>
+            <remote-alias>Number_of_Vehicles</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[accident data.csv_D373165417F64C5787A7627F9FEE360E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Road_Surface_Conditions</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Road_Surface_Conditions]</local-name>
+            <parent-name>[accident data.csv]</parent-name>
+            <remote-alias>Road_Surface_Conditions</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[accident data.csv_D373165417F64C5787A7627F9FEE360E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Road_Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Road_Type]</local-name>
+            <parent-name>[accident data.csv]</parent-name>
+            <remote-alias>Road_Type</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[accident data.csv_D373165417F64C5787A7627F9FEE360E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Urban_or_Rural_Area</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Urban_or_Rural_Area]</local-name>
+            <parent-name>[accident data.csv]</parent-name>
+            <remote-alias>Urban_or_Rural_Area</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[accident data.csv_D373165417F64C5787A7627F9FEE360E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weather_Conditions</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Weather_Conditions]</local-name>
+            <parent-name>[accident data.csv]</parent-name>
+            <remote-alias>Weather_Conditions</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[accident data.csv_D373165417F64C5787A7627F9FEE360E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vehicle_Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Vehicle_Type]</local-name>
+            <parent-name>[accident data.csv]</parent-name>
+            <remote-alias>Vehicle_Type</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[accident data.csv_D373165417F64C5787A7627F9FEE360E]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Accident Severity' datatype='string' name='[Accident_Severity]' role='dimension' type='nominal' />
+      <column aggregation='Avg' datatype='real' name='[Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column caption='Light Conditions' datatype='string' name='[Light_Conditions]' role='dimension' type='nominal' />
+      <column aggregation='Avg' datatype='real' name='[Longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Number of Casualties' datatype='integer' name='[Number_of_Casualties]' role='measure' type='quantitative' />
+      <column caption='Number of Vehicles' datatype='integer' name='[Number_of_Vehicles]' role='measure' type='quantitative' />
+      <column caption='Road Surface Conditions' datatype='string' name='[Road_Surface_Conditions]' role='dimension' type='nominal' />
+      <column caption='Road Type' datatype='string' name='[Road_Type]' role='dimension' type='nominal' />
+      <column caption='Urban or Rural Area' datatype='string' name='[Urban_or_Rural_Area]' role='dimension' type='nominal' />
+      <column caption='Vehicle Type' datatype='string' name='[Vehicle_Type]' role='dimension' type='nominal' />
+      <column caption='Weather Conditions' datatype='string' name='[Weather_Conditions]' role='dimension' type='nominal' />
+      <column caption='accident data.csv' datatype='table' name='[__tableau_internal_object_id__].[accident data.csv_D373165417F64C5787A7627F9FEE360E]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[accident data.csv_D373165417F64C5787A7627F9FEE360E]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:accident data.csv_D373165417F64C5787A7627F9FEE360E:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Number_of_Vehicles]' derivation='Avg' name='[avg:Number_of_Vehicles:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Number_of_Casualties]' derivation='Count' name='[cnt:Number_of_Casualties:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Number_of_Vehicles]' derivation='Count' name='[cnt:Number_of_Vehicles:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Accident_Severity]' derivation='None' name='[none:Accident_Severity:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Number_of_Casualties]' derivation='Sum' name='[sum:Number_of_Casualties:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Number_of_Vehicles]' derivation='Sum' name='[sum:Number_of_Vehicles:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/exp3/AppData/Local/Temp/TableauTemp/#TableauTemp_0zswdwt1rl2g7b18qozly1bp0bwk.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='03/13/2025 05:56:36 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Index</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Index]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Index</remote-alias>
+              <ordinal>0</ordinal>
+              <family>accident data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>625686</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[accident data.csv_D373165417F64C5787A7627F9FEE360E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Accident_Severity</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Accident_Severity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Accident_Severity</remote-alias>
+              <ordinal>1</ordinal>
+              <family>accident data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[accident data.csv_D373165417F64C5787A7627F9FEE360E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Accident Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Accident Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Accident Date</remote-alias>
+              <ordinal>2</ordinal>
+              <family>accident data.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>5648</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[accident data.csv_D373165417F64C5787A7627F9FEE360E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Latitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Latitude</remote-alias>
+              <ordinal>3</ordinal>
+              <family>accident data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>718739</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[accident data.csv_D373165417F64C5787A7627F9FEE360E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Light_Conditions</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Light_Conditions]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Light_Conditions</remote-alias>
+              <ordinal>4</ordinal>
+              <family>accident data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[accident data.csv_D373165417F64C5787A7627F9FEE360E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>District Area</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[District Area]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>District Area</remote-alias>
+              <ordinal>5</ordinal>
+              <family>accident data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>707</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[accident data.csv_D373165417F64C5787A7627F9FEE360E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Longitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Longitude</remote-alias>
+              <ordinal>6</ordinal>
+              <family>accident data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>718739</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[accident data.csv_D373165417F64C5787A7627F9FEE360E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number_of_Casualties</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Number_of_Casualties]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number_of_Casualties</remote-alias>
+              <ordinal>7</ordinal>
+              <family>accident data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[accident data.csv_D373165417F64C5787A7627F9FEE360E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number_of_Vehicles</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Number_of_Vehicles]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number_of_Vehicles</remote-alias>
+              <ordinal>8</ordinal>
+              <family>accident data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[accident data.csv_D373165417F64C5787A7627F9FEE360E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Road_Surface_Conditions</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Road_Surface_Conditions]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Road_Surface_Conditions</remote-alias>
+              <ordinal>9</ordinal>
+              <family>accident data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[accident data.csv_D373165417F64C5787A7627F9FEE360E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Road_Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Road_Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Road_Type</remote-alias>
+              <ordinal>10</ordinal>
+              <family>accident data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[accident data.csv_D373165417F64C5787A7627F9FEE360E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Urban_or_Rural_Area</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Urban_or_Rural_Area]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Urban_or_Rural_Area</remote-alias>
+              <ordinal>11</ordinal>
+              <family>accident data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[accident data.csv_D373165417F64C5787A7627F9FEE360E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Weather_Conditions</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Weather_Conditions]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Weather_Conditions</remote-alias>
+              <ordinal>12</ordinal>
+              <family>accident data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[accident data.csv_D373165417F64C5787A7627F9FEE360E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Vehicle_Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Vehicle_Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Vehicle_Type</remote-alias>
+              <ordinal>13</ordinal>
+              <family>accident data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[accident data.csv_D373165417F64C5787A7627F9FEE360E]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0sb2tds02gi4nb0zrz8840a3b02k].[__tableau_internal_object_id__].[cnt:accident data.csv_D373165417F64C5787A7627F9FEE360E:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0sb2tds02gi4nb0zrz8840a3b02k].[avg:Number_of_Vehicles:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0sb2tds02gi4nb0zrz8840a3b02k].[cnt:Number_of_Vehicles:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0sb2tds02gi4nb0zrz8840a3b02k].[sum:Number_of_Vehicles:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0sb2tds02gi4nb0zrz8840a3b02k].[cnt:Number_of_Casualties:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0sb2tds02gi4nb0zrz8840a3b02k].[sum:Number_of_Casualties:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Accident_Severity:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Slight&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Serious&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Fatal&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <date-options start-of-week='saturday' />
+      <object-graph>
+        <objects>
+          <object caption='accident data.csv' id='accident data.csv_D373165417F64C5787A7627F9FEE360E'>
+            <properties context=''>
+              <relation connection='textscan.0uxavt20enm9g219bpwk00hzgtbu' name='accident data.csv' table='[accident data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_AE' separator=','>
+                  <column datatype='string' name='Index' ordinal='0' />
+                  <column datatype='string' name='Accident_Severity' ordinal='1' />
+                  <column datatype='date' name='Accident Date' ordinal='2' />
+                  <column datatype='real' name='Latitude' ordinal='3' />
+                  <column datatype='string' name='Light_Conditions' ordinal='4' />
+                  <column datatype='string' name='District Area' ordinal='5' />
+                  <column datatype='real' name='Longitude' ordinal='6' />
+                  <column datatype='integer' name='Number_of_Casualties' ordinal='7' />
+                  <column datatype='integer' name='Number_of_Vehicles' ordinal='8' />
+                  <column datatype='string' name='Road_Surface_Conditions' ordinal='9' />
+                  <column datatype='string' name='Road_Type' ordinal='10' />
+                  <column datatype='string' name='Urban_or_Rural_Area' ordinal='11' />
+                  <column datatype='string' name='Weather_Conditions' ordinal='12' />
+                  <column datatype='string' name='Vehicle_Type' ordinal='13' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Severity vs. Number of Casualties'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='accident data' name='federated.0sb2tds02gi4nb0zrz8840a3b02k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0sb2tds02gi4nb0zrz8840a3b02k'>
+            <column caption='Accident Severity' datatype='string' name='[Accident_Severity]' role='dimension' type='nominal' />
+            <column caption='Number of Casualties' datatype='integer' name='[Number_of_Casualties]' role='measure' type='quantitative' />
+            <column-instance column='[Accident_Severity]' derivation='None' name='[none:Accident_Severity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number_of_Casualties]' derivation='Sum' name='[sum:Number_of_Casualties:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0sb2tds02gi4nb0zrz8840a3b02k].[sum:Number_of_Casualties:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.0sb2tds02gi4nb0zrz8840a3b02k].[sum:Number_of_Casualties:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0sb2tds02gi4nb0zrz8840a3b02k].[none:Accident_Severity:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-cull' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0sb2tds02gi4nb0zrz8840a3b02k].[sum:Number_of_Casualties:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{E7B49D69-E65B-4102-855E-3ACA57ADC77D}' />
+    </worksheet>
+    <worksheet name='Years of Accident Date vs. Number of Vehicles'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='accident data' name='federated.0sb2tds02gi4nb0zrz8840a3b02k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0sb2tds02gi4nb0zrz8840a3b02k'>
+            <column datatype='date' name='[Accident Date]' role='dimension' type='ordinal' />
+            <column caption='Number of Vehicles' datatype='integer' name='[Number_of_Vehicles]' role='measure' type='quantitative' />
+            <column-instance column='[Number_of_Vehicles]' derivation='Sum' name='[sum:Number_of_Vehicles:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Accident Date]' derivation='Quarter-Trunc' name='[tqr:Accident Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0sb2tds02gi4nb0zrz8840a3b02k].[sum:Number_of_Vehicles:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.0sb2tds02gi4nb0zrz8840a3b02k].[sum:Number_of_Vehicles:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0sb2tds02gi4nb0zrz8840a3b02k].[tqr:Accident Date:ok]' value='128' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-color' value='#499894' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0sb2tds02gi4nb0zrz8840a3b02k].[tqr:Accident Date:ok]</rows>
+        <cols>[federated.0sb2tds02gi4nb0zrz8840a3b02k].[sum:Number_of_Vehicles:qk]</cols>
+      </table>
+      <simple-id uuid='{7C184A33-3FDF-478B-AA1B-F520DF4E6FDE}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Severity vs. Number of Casualties'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0sb2tds02gi4nb0zrz8840a3b02k].[none:Accident_Severity:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0sb2tds02gi4nb0zrz8840a3b02k].[none:Accident_Severity:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{627190F6-0A63-488D-82A9-DF0935EC249E}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Years of Accident Date vs. Number of Vehicles'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0sb2tds02gi4nb0zrz8840a3b02k].[tmn:Accident Date:ok]</field>
+            <field>[federated.0sb2tds02gi4nb0zrz8840a3b02k].[yr:Accident Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D5B6603F-6C7E-48CD-BE78-1393199A575D}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Severity vs. Number of Casualties' width='192'>
+      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
+      CH8AAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Years of Accident Date vs. Number of Vehicles' width='192'>
+      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
+      C6lsAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
